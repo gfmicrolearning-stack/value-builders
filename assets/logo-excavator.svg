@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F4C3A"/>
+      <stop offset="100%" stop-color="#0A3426"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54A"/>
+      <stop offset="100%" stop-color="#E8A820"/>
+    </linearGradient>
+    <linearGradient id="limeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C8F05E"/>
+      <stop offset="100%" stop-color="#8FBC3F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="800" rx="100" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid lines (construction feel) -->
+  <g opacity="0.08" stroke="#A8D94B" stroke-width="1">
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="600" x2="800" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="800"/>
+    <line x1="400" y1="0" x2="400" y2="800"/>
+    <line x1="600" y1="0" x2="600" y2="800"/>
+  </g>
+
+  <!-- Ground line -->
+  <line x1="90" y1="490" x2="710" y2="490" stroke="#A8D94B" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Pile of dollar coins (cascata di dollari) -->
+  <g>
+    <ellipse cx="560" cy="500" rx="110" ry="18" fill="#0A3426" opacity="0.5"/>
+    <!-- Bottom coins -->
+    <circle cx="520" cy="480" r="28" fill="url(#goldGrad)" stroke="#0A3426" stroke-width="3"/>
+    <text x="520" y="492" text-anchor="middle" font-family="Georgia, serif" font-size="32" font-weight="900" fill="#0A3426">$</text>
+    <circle cx="595" cy="480" r="28" fill="url(#goldGrad)" stroke="#0A3426" stroke-width="3"/>
+    <text x="595" y="492" text-anchor="middle" font-family="Georgia, serif" font-size="32" font-weight="900" fill="#0A3426">$</text>
+    <!-- Top coins -->
+    <circle cx="555" cy="445" r="26" fill="url(#goldGrad)" stroke="#0A3426" stroke-width="3"/>
+    <text x="555" y="456" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="900" fill="#0A3426">$</text>
+    <circle cx="625" cy="445" r="24" fill="url(#goldGrad)" stroke="#0A3426" stroke-width="3"/>
+    <text x="625" y="455" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="900" fill="#0A3426">$</text>
+    <!-- Flying coins -->
+    <circle cx="590" cy="395" r="18" fill="url(#goldGrad)" stroke="#0A3426" stroke-width="3"/>
+    <text x="590" y="403" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="900" fill="#0A3426">$</text>
+  </g>
+
+  <!-- EXCAVATOR -->
+  <g>
+    <!-- Tracks base -->
+    <rect x="120" y="450" width="230" height="45" rx="22" fill="#1B4332" stroke="#A8D94B" stroke-width="4"/>
+    <!-- Track wheels -->
+    <circle cx="150" cy="472" r="10" fill="url(#limeGrad)"/>
+    <circle cx="190" cy="472" r="10" fill="url(#limeGrad)"/>
+    <circle cx="235" cy="472" r="10" fill="url(#limeGrad)"/>
+    <circle cx="280" cy="472" r="10" fill="url(#limeGrad)"/>
+    <circle cx="320" cy="472" r="10" fill="url(#limeGrad)"/>
+
+    <!-- Cabin body (yellow) -->
+    <rect x="160" y="305" width="180" height="150" rx="12" fill="url(#goldGrad)" stroke="#0A3426" stroke-width="5"/>
+
+    <!-- Windows (3 round windows like in drawing) -->
+    <circle cx="200" cy="355" r="22" fill="#0F4C3A" stroke="#0A3426" stroke-width="4"/>
+    <circle cx="200" cy="355" r="14" fill="#C8F05E" opacity="0.85"/>
+    <circle cx="250" cy="355" r="22" fill="#0F4C3A" stroke="#0A3426" stroke-width="4"/>
+    <circle cx="250" cy="355" r="14" fill="#C8F05E" opacity="0.85"/>
+    <circle cx="300" cy="355" r="22" fill="#0F4C3A" stroke="#0A3426" stroke-width="4"/>
+    <circle cx="300" cy="355" r="14" fill="#C8F05E" opacity="0.85"/>
+
+    <!-- Boom arm (upper) -->
+    <polygon points="335,315 460,240 490,270 365,360" fill="url(#goldGrad)" stroke="#0A3426" stroke-width="5" stroke-linejoin="round"/>
+
+    <!-- Stick (lower arm) -->
+    <polygon points="470,250 560,340 540,370 445,285" fill="url(#goldGrad)" stroke="#0A3426" stroke-width="5" stroke-linejoin="round"/>
+
+    <!-- Joint pins -->
+    <circle cx="340" cy="340" r="8" fill="#0A3426"/>
+    <circle cx="475" cy="260" r="7" fill="#0A3426"/>
+    <circle cx="555" cy="355" r="7" fill="#0A3426"/>
+
+    <!-- Bucket (scooping pose) -->
+    <path d="M 520 330 Q 560 320, 600 340 L 615 390 Q 590 410, 560 400 Q 530 390, 520 365 Z"
+          fill="url(#goldGrad)" stroke="#0A3426" stroke-width="5" stroke-linejoin="round"/>
+    <!-- Bucket teeth -->
+    <polygon points="520,365 515,380 525,372" fill="#0A3426"/>
+    <polygon points="535,372 532,388 542,380" fill="#0A3426"/>
+    <polygon points="550,378 548,395 558,385" fill="#0A3426"/>
+
+    <!-- Dollar inside bucket -->
+    <text x="560" y="378" text-anchor="middle" font-family="Georgia, serif" font-size="32" font-weight="900" fill="#0A3426">$</text>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="400" y="620" text-anchor="middle"
+        font-family="'Lato Black', 'Lato', sans-serif" font-size="78" font-weight="900"
+        fill="#FFFFFF" letter-spacing="2">VALUE</text>
+  <text x="400" y="695" text-anchor="middle"
+        font-family="'Lato Black', 'Lato', sans-serif" font-size="78" font-weight="900"
+        fill="url(#limeGrad)" letter-spacing="2">BUILDERS</text>
+
+  <!-- Tagline -->
+  <line x1="230" y1="735" x2="320" y2="735" stroke="#F4C430" stroke-width="2"/>
+  <text x="400" y="743" text-anchor="middle"
+        font-family="'Lato', sans-serif" font-size="22" font-weight="700"
+        fill="#F4C430" letter-spacing="10">PRICING</text>
+  <line x1="480" y1="735" x2="570" y2="735" stroke="#F4C430" stroke-width="2"/>
+</svg>
